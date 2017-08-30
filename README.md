@@ -8,5 +8,5 @@ After cloning the project, install dependancies using `$ npm install`.
 
 ## Running and building
 
-To run the local webpack server run the command `$ npm start`.
+To run the local webpack server run the command `$ npm start`, then go to `localhost:3000`.
 To build a distributable version, run `$ npm run build`.
