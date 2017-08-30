@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --progress",
-    "build": "NODE_ENV=production webpack --progress -p --colors"
+    "build": "NODE_ENV=production webpack --progress -p --colors",
+    "postbuild": "mkdir -p build/assets && mkdir -p build/data && cp -r assets/* build/assets && cp -r data/* build/data"
   },
   "author": "",
   "license": "ISC",
