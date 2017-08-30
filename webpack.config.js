@@ -27,6 +27,10 @@ module.exports = {
        loader: 'file-loader?name=assets/spritesheet/svg/[name].[ext]'
       },
       {
+       test: /\.png$/i,
+       loader: 'file-loader?name=assets/[name].[ext]'
+     },
+      {
         test: /\.scss$/,
         loader: 'style-loader!css-loader!sass-loader'
       },

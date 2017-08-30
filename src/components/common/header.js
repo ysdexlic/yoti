@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import selfie from '../../../assets/selfie.png';
+
 export class Header extends Component {
   render() {
     return (
@@ -16,7 +18,7 @@ export class Header extends Component {
               <div className="icon-connect-on"></div>
             </div>
             <div className="photo">
-              <img className="selfie" src="/assets/selfie.png"/>
+              <img className="selfie" src={selfie}/>
             </div>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 
+import selfie from '../../../assets/selfie.png';
+
 export class Modal extends Component {
 
   close = () => {
@@ -41,7 +43,7 @@ export class Modal extends Component {
               <div className="icon-selfie">
                 {
                   type === 'application'
-                    ? <img className="selfie" src="/assets/selfie.png"/>
+                    ? <img className="selfie" src={selfie}/>
                     : <div className="icon-user_selfie_ph_medium"></div>
                 }
                 <div className="icon-logo_circle"></div>
