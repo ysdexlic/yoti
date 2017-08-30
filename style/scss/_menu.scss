@@ -1,0 +1,22 @@
+.menu {
+  background-color: $color-16;
+  color: $color-3;
+  @media screen and (min-width: 768px) {
+    float: left;
+    width: 240px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 10px;
+      background: $color-3a;
+      [class^='icon'] {
+        display: inline-block;
+        margin: 0 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+nav.navbar {
+  margin-bottom: 0;
+  .navbar-brand, .photo, .connection {
+    height: 60px;
+    padding: 0 15px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .navbar-brand {
+    float: none;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .connection {
+    background: $color-1a;
+
+    p {
+      float: left;
+      margin: 0;
+    }
+
+    .icon-connect-on {
+      float: right;
+      margin: 0 10px;
+    }
+  }
+
+  .photo img.selfie {
+    height: 80%;
+    border-radius: 50%;
+  }
+
+}

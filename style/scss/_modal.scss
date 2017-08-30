@@ -1,0 +1,151 @@
+.modal-bg {
+  cursor: default;
+  position: relative;
+  width: 0;
+  height: 0;
+  background: rgba(0,0,0,0);
+  transition: background 0.3s;
+  &.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+  }
+}
+
+.activity-modal {
+  cursor: default;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: $color-17;
+  width: 500px;
+  height: 90%;
+  box-shadow: 0 0 1em 0 $color-2c;
+  border-radius: 5px;
+  >div {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .close-icon {
+    position: absolute;
+    cursor: pointer;
+    right: -25px;
+  }
+  .icon-selfie {
+    position: relative;
+    margin: 20px auto;
+    width: 150px;
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .icon-logo_circle {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &_header {
+    height: 185px;
+  }
+
+  &_body {
+
+    hr {
+      width: 90%;
+      border: 1px solid $color-15;
+    }
+
+    .information {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .attributes {
+      padding: 0 20px;
+      div {
+        &.attribute {
+          margin-bottom: 20px;
+        }
+
+        &.title {
+          color: $color-3;
+          font-size: 12px;
+          text-transform: capitalize;
+        }
+
+        &.name {
+          color: $color-2c;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+}
+
+
+.modal-sm {
+
+  .icon-selfie {
+    position: relative;
+    margin: 20px auto;
+    width: 130px;
+
+    img {
+      width: 100%;
+    }
+
+    .icon-logo_circle {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .modal-header {
+    height: 185px;
+  }
+
+  .modal-body {
+    .information {
+      border-bottom: 1px solid $color-14;
+      margin-bottom: 20px;
+      text-align: center;
+      padding-bottom: 20px;
+
+      [class^='icon'] {
+        margin: 0 auto;
+      }
+    }
+
+    .attributes {
+      div {
+        &.attribute {
+          margin-bottom: 20px;
+        }
+
+        &.title {
+          color: $color-3;
+          font-size: 12px;
+          text-transform: capitalize;
+        }
+
+        &.name {
+          color: $color-2c;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
